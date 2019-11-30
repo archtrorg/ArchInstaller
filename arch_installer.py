@@ -56,7 +56,7 @@ def generate_fstab():
 
 #Downloading inside installer to /mnt
 def download_inside_installer():
-    os.system("arch-chroot /mnt wget https://raw.githubusercontent.com/Castlers/ArchInstaller/master/inside_installer.py")
+    os.system("arch-chroot /mnt wget https://raw.githubusercontent.com/archtrorg/ArchInstaller/master/inside_installer.py")
 
 #Executing inside installer on chrooted /mnt
 def execute_inside_installer():
