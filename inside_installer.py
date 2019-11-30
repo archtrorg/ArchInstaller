@@ -320,6 +320,12 @@ def add_repositories():
     os.system("echo '[archlinuxfr]' >> /etc/pacman.conf")
     os.system("echo 'SigLevel = Never' >> /etc/pacman.conf")
     os.system("echo 'Server = http://repo.archlinux.fr/$arch' >> /etc/pacman.conf")
+    
+    #Archlinuxtr
+    os.system("echo -e '\n' >> /etc/pacman.conf")
+    os.system("echo '[archlinuxtr]' >> /etc/pacman.conf")
+    os.system("echo 'SigLevel = Optional TrustedOnly' >> /etc/pacman.conf")
+    os.system("echo 'Server = http://ftp.linux.org.tr/archlinux/$repo/os/$arch' >> /etc/pacman.conf")
 
     #Archlinuxcn
     os.system("echo -e '\n' >> /etc/pacman.conf")
